@@ -1,11 +1,11 @@
-@mixin MixBreakPoint($bp) {
+@mixin MixBreakPoint($bp){
 
-  @if map-has-key($break-point , $bp ){
+  @if map-has-key($break-point, $bp ){
     @media screen and (min-width: map-get($break-point , $bp)){
       @content;
     }
 
-  }@else {
+  } @else {
     @media screen and (min-width: $bp){
       @content;
     }

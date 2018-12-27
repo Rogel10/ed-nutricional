@@ -1,0 +1,49 @@
+.Header{
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  padding: .5rem;
+  border: dashed 1px red;
+  background-color: var(--second-color);
+  height: 100vh;
+  width: 50%;
+  margin-left: -100vw;
+
+  &.is-active{margin-left: 0;}
+
+  &-btn {
+    position: fixed;
+    z-index: 999;
+    top: var(--logo-spacing);
+    right: var(--logo-spacing);
+    display: flex;
+    // background-color: var(--second-color);
+    border: dashed 1px red;
+    height: var(--logo-height);
+    width: var(--logo-width);
+
+    @include MixBreakPoint(m){ display: none;}
+
+    & {
+
+      &.hamburguer:focus {
+        outline: 0;
+        border: 0;
+      }
+
+      .hamburguer {
+        &-inner,
+        &-inner::after,
+        &-inner::before{
+          // background-color: var(--link)
+          width: 100%;
+        }
+
+      }
+
+    }
+  }
+
+}
+
+
