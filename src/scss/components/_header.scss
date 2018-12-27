@@ -8,6 +8,7 @@
   height: 100vh;
   width: 50%;
   margin-left: -100vw;
+  transition: margin-left .3s ease;
 
   &.is-active{margin-left: 0;}
 
